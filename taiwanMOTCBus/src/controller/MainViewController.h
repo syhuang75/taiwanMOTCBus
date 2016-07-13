@@ -13,7 +13,9 @@
 #import "model_busRoute.h"
 #import "publicApi.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView_route;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar_filter;
+@property (strong, nonatomic) NSMutableArray *array_show;
 
 @end

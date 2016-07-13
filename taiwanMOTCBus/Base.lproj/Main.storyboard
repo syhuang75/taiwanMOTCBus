@@ -17,9 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CWR-G3-p5f">
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWR-G3-p5f">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="qKg-XN-XG1"/>
                                 </connections>
@@ -95,6 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Bus List" id="vNF-jE-hSI"/>
                     <connections>
+                        <outlet property="searchBar_filter" destination="CWR-G3-p5f" id="VgW-To-qC1"/>
                         <outlet property="tableView_route" destination="sZL-FK-iAj" id="GpJ-Zg-1iv"/>
                     </connections>
                 </viewController>
