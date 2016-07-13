@@ -52,6 +52,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		928B64831D3605C1003CE295 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				928B64841D3605C1003CE295 /* controller */,
+				928B64851D3605C1003CE295 /* manager */,
+				928B64861D3605C1003CE295 /* model */,
+				928B64871D3605C1003CE295 /* view */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		928B64841D3605C1003CE295 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		928B64851D3605C1003CE295 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		928B64861D3605C1003CE295 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		928B64871D3605C1003CE295 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		92CA3B1B1D35EC0900A09816 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +112,7 @@
 		92CA3B261D35EC0900A09816 /* taiwanMOTCBus */ = {
 			isa = PBXGroup;
 			children = (
+				928B64831D3605C1003CE295 /* src */,
 				92CA3B2A1D35EC0900A09816 /* AppDelegate.h */,
 				92CA3B2B1D35EC0900A09816 /* AppDelegate.m */,
 				92CA3B2D1D35EC0900A09816 /* ViewController.h */,
