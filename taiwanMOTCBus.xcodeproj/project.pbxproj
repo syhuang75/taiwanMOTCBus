@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027C7EF860D0153216D2FAEE /* Pods_taiwanMOTCBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */; };
 		92CA3B291D35EC0900A09816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B281D35EC0900A09816 /* main.m */; };
 		92CA3B2C1D35EC0900A09816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B2B1D35EC0900A09816 /* AppDelegate.m */; };
 		92CA3B2F1D35EC0900A09816 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B2E1D35EC0900A09816 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taiwanMOTCBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3AB153414C6374D8F0616D /* Pods-taiwanMOTCBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taiwanMOTCBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-taiwanMOTCBus/Pods-taiwanMOTCBus.release.xcconfig"; sourceTree = "<group>"; };
 		92CA3B241D35EC0900A09816 /* taiwanMOTCBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwanMOTCBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA3B281D35EC0900A09816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92CA3B2A1D35EC0900A09816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		92CA3B331D35EC0900A09816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CA3B361D35EC0900A09816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92CA3B381D35EC0900A09816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6CA10A68100BBC19282780 /* Pods-taiwanMOTCBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taiwanMOTCBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taiwanMOTCBus/Pods-taiwanMOTCBus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027C7EF860D0153216D2FAEE /* Pods_taiwanMOTCBus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70BC35CBBAC4478BD1BB78D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92CA3B1B1D35EC0900A09816 = {
 			isa = PBXGroup;
 			children = (
 				92CA3B261D35EC0900A09816 /* taiwanMOTCBus */,
 				92CA3B251D35EC0900A09816 /* Products */,
+				951BB28029C56405B9B3138C /* Pods */,
+				70BC35CBBAC4478BD1BB78D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		951BB28029C56405B9B3138C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB6CA10A68100BBC19282780 /* Pods-taiwanMOTCBus.debug.xcconfig */,
+				8A3AB153414C6374D8F0616D /* Pods-taiwanMOTCBus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,10 +110,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92CA3B3B1D35EC0900A09816 /* Build configuration list for PBXNativeTarget "taiwanMOTCBus" */;
 			buildPhases = (
+				FD3797F8A257DA8E85C1E906 /* 📦 Check Pods Manifest.lock */,
 				92CA3B201D35EC0900A09816 /* Sources */,
 				92CA3B211D35EC0900A09816 /* Frameworks */,
 				92CA3B221D35EC0900A09816 /* Resources */,
 				928B64821D35ED05003CE295 /* Run Script - get CommitVersion */,
+				283B309EBA1B83E415BD9BCC /* 📦 Embed Pods Frameworks */,
+				7015D4C818601EFA827BCEFF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		283B309EBA1B83E415BD9BCC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taiwanMOTCBus/Pods-taiwanMOTCBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7015D4C818601EFA827BCEFF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taiwanMOTCBus/Pods-taiwanMOTCBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		928B64821D35ED05003CE295 /* Run Script - get CommitVersion */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +216,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "commitNumber=$(git rev-parse --short HEAD)\n/usr/libexec/PlistBuddy -c \"Set :CommitVersion $commitNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+		FD3797F8A257DA8E85C1E906 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -281,6 +353,7 @@
 		};
 		92CA3B3C1D35EC0900A09816 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6CA10A68100BBC19282780 /* Pods-taiwanMOTCBus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = taiwanMOTCBus/Info.plist;
@@ -292,6 +365,7 @@
 		};
 		92CA3B3D1D35EC0900A09816 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3AB153414C6374D8F0616D /* Pods-taiwanMOTCBus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = taiwanMOTCBus/Info.plist;
