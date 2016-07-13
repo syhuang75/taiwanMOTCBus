@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "RouteTableViewCell.h"
+#import "busManager.h"
+#import "Constant.h"
+#import "model_busRoute.h"
+#import "publicApi.h"
 
 @interface MainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView_route;
 
 @end

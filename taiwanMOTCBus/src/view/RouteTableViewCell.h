@@ -10,4 +10,8 @@
 
 @interface RouteTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *label_routeName;
+@property (weak, nonatomic) IBOutlet UILabel *label_busRouteType;
+@property (weak, nonatomic) IBOutlet UILabel *label_headsign;
+
 @end

@@ -10,6 +10,10 @@
 		027C7EF860D0153216D2FAEE /* Pods_taiwanMOTCBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */; };
 		928B648A1D360699003CE295 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B64891D360699003CE295 /* MainViewController.m */; };
 		928B648D1D3609A7003CE295 /* RouteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B648C1D3609A7003CE295 /* RouteTableViewCell.m */; };
+		928B64901D360ADA003CE295 /* networkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B648F1D360ADA003CE295 /* networkManager.m */; };
+		928B64931D360AEC003CE295 /* busManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B64921D360AEC003CE295 /* busManager.m */; };
+		928B64961D360AFD003CE295 /* model_busRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B64951D360AFD003CE295 /* model_busRoute.m */; };
+		928B649A1D360E21003CE295 /* publicApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B64991D360E21003CE295 /* publicApi.m */; };
 		92CA3B291D35EC0900A09816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B281D35EC0900A09816 /* main.m */; };
 		92CA3B2C1D35EC0900A09816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B2B1D35EC0900A09816 /* AppDelegate.m */; };
 		92CA3B321D35EC0900A09816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CA3B301D35EC0900A09816 /* Main.storyboard */; };
@@ -24,6 +28,15 @@
 		928B64891D360699003CE295 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		928B648B1D3609A7003CE295 /* RouteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteTableViewCell.h; sourceTree = "<group>"; };
 		928B648C1D3609A7003CE295 /* RouteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteTableViewCell.m; sourceTree = "<group>"; };
+		928B648E1D360ADA003CE295 /* networkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = networkManager.h; sourceTree = "<group>"; };
+		928B648F1D360ADA003CE295 /* networkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = networkManager.m; sourceTree = "<group>"; };
+		928B64911D360AEC003CE295 /* busManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = busManager.h; sourceTree = "<group>"; };
+		928B64921D360AEC003CE295 /* busManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = busManager.m; sourceTree = "<group>"; };
+		928B64941D360AFD003CE295 /* model_busRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model_busRoute.h; sourceTree = "<group>"; };
+		928B64951D360AFD003CE295 /* model_busRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model_busRoute.m; sourceTree = "<group>"; };
+		928B64971D360B11003CE295 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		928B64981D360E21003CE295 /* publicApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publicApi.h; sourceTree = "<group>"; };
+		928B64991D360E21003CE295 /* publicApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = publicApi.m; sourceTree = "<group>"; };
 		92CA3B241D35EC0900A09816 /* taiwanMOTCBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwanMOTCBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA3B281D35EC0900A09816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92CA3B2A1D35EC0900A09816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +91,12 @@
 		928B64851D3605C1003CE295 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				928B648E1D360ADA003CE295 /* networkManager.h */,
+				928B648F1D360ADA003CE295 /* networkManager.m */,
+				928B64911D360AEC003CE295 /* busManager.h */,
+				928B64921D360AEC003CE295 /* busManager.m */,
+				928B64981D360E21003CE295 /* publicApi.h */,
+				928B64991D360E21003CE295 /* publicApi.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -85,6 +104,9 @@
 		928B64861D3605C1003CE295 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				928B64941D360AFD003CE295 /* model_busRoute.h */,
+				928B64951D360AFD003CE295 /* model_busRoute.m */,
+				928B64971D360B11003CE295 /* Constant.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -287,7 +309,11 @@
 				92CA3B2C1D35EC0900A09816 /* AppDelegate.m in Sources */,
 				928B648D1D3609A7003CE295 /* RouteTableViewCell.m in Sources */,
 				928B648A1D360699003CE295 /* MainViewController.m in Sources */,
+				928B64901D360ADA003CE295 /* networkManager.m in Sources */,
+				928B64931D360AEC003CE295 /* busManager.m in Sources */,
 				92CA3B291D35EC0900A09816 /* main.m in Sources */,
+				928B64961D360AFD003CE295 /* model_busRoute.m in Sources */,
+				928B649A1D360E21003CE295 /* publicApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
