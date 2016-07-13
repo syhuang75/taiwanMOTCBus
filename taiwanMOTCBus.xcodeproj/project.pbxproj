@@ -89,6 +89,7 @@
 				92CA3B201D35EC0900A09816 /* Sources */,
 				92CA3B211D35EC0900A09816 /* Frameworks */,
 				92CA3B221D35EC0900A09816 /* Resources */,
+				928B64821D35ED05003CE295 /* Run Script - get CommitVersion */,
 			);
 			buildRules = (
 			);
@@ -143,6 +144,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		928B64821D35ED05003CE295 /* Run Script - get CommitVersion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - get CommitVersion";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "commitNumber=$(git rev-parse --short HEAD)\n/usr/libexec/PlistBuddy -c \"Set :CommitVersion $commitNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92CA3B201D35EC0900A09816 /* Sources */ = {
@@ -302,6 +320,7 @@
 				92CA3B3D1D35EC0900A09816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
