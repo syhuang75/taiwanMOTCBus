@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		027C7EF860D0153216D2FAEE /* Pods_taiwanMOTCBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */; };
+		928B648A1D360699003CE295 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B64891D360699003CE295 /* MainViewController.m */; };
+		928B648D1D3609A7003CE295 /* RouteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B648C1D3609A7003CE295 /* RouteTableViewCell.m */; };
 		92CA3B291D35EC0900A09816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B281D35EC0900A09816 /* main.m */; };
 		92CA3B2C1D35EC0900A09816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B2B1D35EC0900A09816 /* AppDelegate.m */; };
-		92CA3B2F1D35EC0900A09816 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3B2E1D35EC0900A09816 /* ViewController.m */; };
 		92CA3B321D35EC0900A09816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CA3B301D35EC0900A09816 /* Main.storyboard */; };
 		92CA3B341D35EC0900A09816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA3B331D35EC0900A09816 /* Assets.xcassets */; };
 		92CA3B371D35EC0900A09816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CA3B351D35EC0900A09816 /* LaunchScreen.storyboard */; };
@@ -19,12 +20,14 @@
 /* Begin PBXFileReference section */
 		48EF7471F61AC6FA1D335448 /* Pods_taiwanMOTCBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taiwanMOTCBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3AB153414C6374D8F0616D /* Pods-taiwanMOTCBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taiwanMOTCBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-taiwanMOTCBus/Pods-taiwanMOTCBus.release.xcconfig"; sourceTree = "<group>"; };
+		928B64881D360699003CE295 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		928B64891D360699003CE295 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		928B648B1D3609A7003CE295 /* RouteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteTableViewCell.h; sourceTree = "<group>"; };
+		928B648C1D3609A7003CE295 /* RouteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteTableViewCell.m; sourceTree = "<group>"; };
 		92CA3B241D35EC0900A09816 /* taiwanMOTCBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwanMOTCBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA3B281D35EC0900A09816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92CA3B2A1D35EC0900A09816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92CA3B2B1D35EC0900A09816 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		92CA3B2D1D35EC0900A09816 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		92CA3B2E1D35EC0900A09816 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		92CA3B311D35EC0900A09816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92CA3B331D35EC0900A09816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CA3B361D35EC0900A09816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 		928B64841D3605C1003CE295 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				928B64881D360699003CE295 /* MainViewController.h */,
+				928B64891D360699003CE295 /* MainViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -87,6 +92,8 @@
 		928B64871D3605C1003CE295 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				928B648B1D3609A7003CE295 /* RouteTableViewCell.h */,
+				928B648C1D3609A7003CE295 /* RouteTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -115,8 +122,6 @@
 				928B64831D3605C1003CE295 /* src */,
 				92CA3B2A1D35EC0900A09816 /* AppDelegate.h */,
 				92CA3B2B1D35EC0900A09816 /* AppDelegate.m */,
-				92CA3B2D1D35EC0900A09816 /* ViewController.h */,
-				92CA3B2E1D35EC0900A09816 /* ViewController.m */,
 				92CA3B301D35EC0900A09816 /* Main.storyboard */,
 				92CA3B331D35EC0900A09816 /* Assets.xcassets */,
 				92CA3B351D35EC0900A09816 /* LaunchScreen.storyboard */,
@@ -279,8 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CA3B2F1D35EC0900A09816 /* ViewController.m in Sources */,
 				92CA3B2C1D35EC0900A09816 /* AppDelegate.m in Sources */,
+				928B648D1D3609A7003CE295 /* RouteTableViewCell.m in Sources */,
+				928B648A1D360699003CE295 /* MainViewController.m in Sources */,
 				92CA3B291D35EC0900A09816 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

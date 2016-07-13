@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  taiwanMOTCBus
 //
 //  Created by baron on 2016/7/13.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RouteTableViewCell.h"
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
